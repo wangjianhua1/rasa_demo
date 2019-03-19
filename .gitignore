@@ -2,3 +2,4 @@
 *.iml
 *.xml
 rasa_learn/models
+rasa_learn/data/*.dat
