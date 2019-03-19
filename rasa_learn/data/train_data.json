@@ -1,0 +1,40 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "找个吃拉面的店",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "拉面",
+            "entity": "food"
+          }
+        ]
+      },
+      {
+        "text": "这附近哪里有吃麻辣烫的地方",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "麻辣烫",
+            "entity": "food"
+          }
+        ]
+      },
+      {
+        "text": "附近有什么好吃的地方吗",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "肚子饿了，推荐一家吃放的地儿呗",
+        "intent": "restaurant_search",
+        "entities": []
+      }
+    ]
+  }
+}
