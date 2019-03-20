@@ -2,23 +2,30 @@ intents:
   - greet
   - mood_happy
   - mood_unhappy
+  - ask_weather
+  - weather_city
 
 actions:
-- utter_greet
-- utter_happy
-- utter_unhappy
+  - utter_greet
+  - utter_happy
+  - utter_unhappy
+  - action_ask_weather
+  - utter_weather_good
 
 templates:
   utter_greet:
-  - text: "你好，你今天过的怎么样"
-  - text: "今天过的怎么样"
+    - text: "你好，你今天过的怎么样"
+    - text: "今天过的怎么样"
 
   utter_happy:
-  - text: "那很棒棒哦"
-  - text: "那很好哦"
-  - text: "这么好啊"
+    - text: "那很棒棒哦"
+    - text: "那很好哦"
+    - text: "这么好啊"
 
   utter_unhappy:
-  - text: "咋了，可以告诉我吗"
-  - text: "能跟我讲下吗"
-  - text: "能了解下吗"
+    - text: "咋了，可以告诉我吗"
+    - text: "能跟我讲下吗"
+    - text: "能了解下吗"
+
+  utter_weather_good:
+    - text: "{city}天气很好呢"

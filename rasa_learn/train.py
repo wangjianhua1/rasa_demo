@@ -1,4 +1,3 @@
-
 # train_nlu.py ：train NLU model
 
 from rasa_nlu.training_data import load_data
@@ -9,12 +8,12 @@ from rasa_nlu.model import Trainer
 # 训练模型
 def train():
     # 示例数据
-    training_data = load_data('data/train_data.json')
+    training_data = load_data('domain.yml')
     # pipeline配置
-    trainer = Trainer(config.load("nlu_config.yml"))
+    trainer = Trainer(config.load("policy_config.yml"))
     trainer.train(training_data)
-    model_directory = trainer.persist(
-        './projects/default/')  # 返回nlu模型的储存位置；如果config文件中没有project_name，模型会存储在默认的 /models/default 文件夹下
+    # model_directory = trainer.persist(
+    #   './projects/default/')  # 返回nlu模型的储存位置；如果config文件中没有project_name，模型会存储在默认的 /models/default 文件夹下
 
 
 # 识别意图

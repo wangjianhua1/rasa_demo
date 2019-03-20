@@ -13,3 +13,10 @@
 ## intent:mood_unhappy
 - 我很难受
 - 我心情很差
+
+## intent:ask_weather
+- 今天天气
+- 天气
+
+## intent:weather_city
+- 武汉
